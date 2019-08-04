@@ -1,8 +1,8 @@
-class CreateAccounts < ActiveRecord::Migration[5.0]
+class CreateArtists < ActiveRecord::Migration[5.0]
   def change
-    create_table :accounts do |t|
+    create_table :artists do |t|
       t.string :name
-      t.string :payment_status
+      t.string :bio
 
       t.timestamps
     end
