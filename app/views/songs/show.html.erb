@@ -4,8 +4,8 @@
 <div>
   <ul>
   <% @song.each do |song| %>
-    <li><%= link_to song.artist_id, song_path(song) %></li>
-    <li><%= link_to song.genre_id, song_path(song) %></li>
+    <li><%= link_to song.artist_id, artist_path(song.artist_id) %></li>
+    <li><%= link_to song.genre_id, genre_path(genre_id) %></li>
   <% end %>
   </ul>
 </div>
