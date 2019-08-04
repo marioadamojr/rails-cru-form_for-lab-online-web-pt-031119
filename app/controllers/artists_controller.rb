@@ -1,2 +1,2 @@
-class AccountsController < ApplicationController
+class ArtistsController < ApplicationController
 end
