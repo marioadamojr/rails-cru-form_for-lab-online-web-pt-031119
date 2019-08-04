@@ -3,9 +3,7 @@
 
 <div>
   <ul>
-  <% @song.each do |song| %>
-    <li><%= link_to song.artist_id, artist_path(song.artist_id) %></li>
-    <li><%= link_to song.genre_id, genre_path(genre_id) %></li>
-  <% end %>
+    <li><%= link_to @song.artist_id, artist_path(@song.artist_id) %></li>
+    <li><%= link_to @song.genre_id, genre_path(@song.genre_id) %></li>
   </ul>
 </div>
